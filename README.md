@@ -8,7 +8,7 @@ The long-term target is one portable synthesis system spanning desktop, Android,
 
 **Design / implementation-planning stage.**
 
-This repository currently preserves the approved architecture, first-playable implementation plan, and Tab5 UI concept renders from the initial sandbox work. The synthesis engine source, training pipeline, and ESP32-P4 firmware are **not yet present in this repository** and should not be inferred from the design documents or UI concepts.
+This repository currently preserves the approved architecture and first-playable implementation direction from the initial sandbox work. The synthesis engine source, training pipeline, and ESP32-P4 firmware are **not yet present** and should not be inferred from the design documents.
 
 ## Core system names
 
@@ -29,14 +29,14 @@ This repository currently preserves the approved architecture, first-playable im
 
 ## Documents
 
-- [GrooveMatter / GrooveDNA Edge Synthesis Design](docs/superpowers/specs/2026-10-02-groovematter-edge-synthesis-design.md)
-- [First Playable Implementation Plan](docs/superpowers/plans/2026-10-02-groovematter-first-playable.md)
+- [Architecture](docs/architecture.md)
+- [First Playable Implementation Plan](docs/implementation-plan.md)
 
-## UI concepts
+## UI direction
 
-The images under [`assets/ui/`](assets/ui/) are high-fidelity design targets, not screenshots of completed firmware. The portrait performance concept is the current direction for the Tab5's 720×1280 display.
+High-fidelity UI concepts were produced in the sandbox for the M5Stack Tab5. The current preferred direction is a 720×1280 portrait performance surface with a central material-field visualization, a large Matter/Tension XY control, touch-safe macro controls, live modulation feedback, and compact embedded-system diagnostics.
 
-![GrooveMatter Tab5 portrait performance concept](assets/ui/performance-portrait.png)
+The production interface is intended to use direct M5GFX-style rendering and the same realtime separation principles proven in OrcSDR: display work never enters the audio/DSP callback.
 
 ## First hardware target
 
