@@ -1,11 +1,16 @@
 # GrooveMatter UI Concepts
 
-These renders are visual design targets for the GrooveMatter touch interface. They are **not screenshots of working firmware**.
+High-fidelity GrooveMatter/Tab5 UI renders were created during the initial sandbox design pass. They are **design targets, not screenshots of working firmware**.
 
-- `performance-portrait.png` — current preferred Tab5 720×1280 performance direction.
-- `performance-landscape.png` — early dense landscape dashboard exploration.
-- `performance-control-landscape.png` — modulation/performance control exploration.
-- `patch-browser-landscape.png` — patch/material library exploration.
-- `diagnostics-landscape.png` — edge-node diagnostics exploration.
+The current preferred direction is the 720×1280 portrait performance layout, with:
+
+- a central material-field / macro-orb visualization
+- a large Matter/Tension XY touch surface
+- touch-safe Matter, Tension, Coupling, Memory, Mutation, Excitation, and Chaos controls
+- simplified live modulation feedback
+- CPU / AI rate / sample-rate / latency / voice / output diagnostics
+- a compact playable key/pad strip
 
 The production UI is intended to be implemented with M5GFX-compatible primitives, bounded incremental drawing, large touch targets, and strict separation from the audio/DSP callback.
+
+The original generated raster concepts remain preserved in the project sandbox; source development in this repository should treat this document as the UI contract until those binary assets are published here.
