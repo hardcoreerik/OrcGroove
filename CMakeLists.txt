@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.20)
+project(orcgroove LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+add_library(groovematter_core
+  src/field.cpp
+)
+target_include_directories(groovematter_core PUBLIC src)
+if (MSVC)
+  target_compile_options(groovematter_core PRIVATE /W4)
+else()
+  target_compile_options(groovematter_core PRIVATE -Wall -Wextra -Wpedantic)
+endif()
+enable_testing()
+add_executable(test_field tests/test_field.cpp)
+target_link_libraries(test_field PRIVATE groovematter_core)
+add_test(NAME field COMMAND test_field)
