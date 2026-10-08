@@ -11,6 +11,7 @@ target_include_directories(groovematter_core PUBLIC src)
 
 add_library(groovematter_ui
   src/ui/tab5_ui.cpp
+  src/ui/tab5_touch.cpp
 )
 target_include_directories(groovematter_ui PUBLIC src)
 
@@ -31,3 +32,7 @@ add_test(NAME field COMMAND test_field)
 add_executable(test_tab5_ui tests/test_tab5_ui.cpp)
 target_link_libraries(test_tab5_ui PRIVATE groovematter_ui)
 add_test(NAME tab5_ui COMMAND test_tab5_ui)
+
+add_executable(test_tab5_touch tests/test_tab5_touch.cpp)
+target_link_libraries(test_tab5_touch PRIVATE groovematter_ui)
+add_test(NAME tab5_touch COMMAND test_tab5_touch)
