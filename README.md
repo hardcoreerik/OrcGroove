@@ -60,3 +60,9 @@ Implement the first-playable plan with test-first development:
 ---
 
 GrooveMatter is research software. No claim of patent novelty is made by this repository.
+
+## Support development
+
+If this project is useful to you, consider supporting its development. Across ORC projects, support helps fund development time, hardware testing, receiver compatibility, and decoder work.
+
+[GitHub Sponsors](https://github.com/sponsors/hardcoreerik) · [Ko-fi](https://ko-fi.com/hardcoreerik) · [PayPal](https://paypal.me/hardcoreerik)
